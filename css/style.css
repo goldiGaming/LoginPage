@@ -1,0 +1,315 @@
+/* Basics */
+
+html, body {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    background-image: url(../src/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-color {
+    background-color: #2c2f33;
+}
+
+.shadow-black {
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.shadow-red {
+    text-shadow: 2px 2px 5px red;
+    box-shadow: 2px 2px 5px red;
+}
+
+.error-text {
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+.center {
+    text-align: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* LOGIN + REGISTER */
+
+.fullscreen-flex {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.home-login {
+    width: 60vw;
+    height: 50%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    position: relative;
+}
+
+.title {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.icon {
+    padding: 1vw;
+    font-size: 2vw;
+}
+
+.input-text {
+    text-align: center;
+    width: 30vw;
+    padding: 1vw;
+    border-radius: 0 10px 10px 0;
+    margin: 0.8vw 0 0.8vw 0;
+    font-size: 1.5vw;
+    border: #B50707 0.2em inset;
+}
+
+#password-icon, #password-confirm-icon {
+    color: grey;
+    font-size: 1.4vw;
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    text-shadow: none;
+}
+
+.right-tooltip {
+    position: absolute;
+    display: inline-block;
+    cursor: help;
+    text-shadow: none;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4vw;
+}
+
+.right-tooltip .right-tooltipcontent {
+    visibility: hidden;
+    width: 15vw;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    position: absolute;
+    top: -250%;
+    left: 110%;
+    margin: 0 1vw;
+    padding: 1vw;
+}
+
+.right-tooltip:hover .right-tooltipcontent{
+    visibility: visible;
+}
+
+.right-tooltiptext {
+    position: inherit;
+    font-size: 1vw; 
+}
+
+.button {
+    text-align: center;
+    padding: 0.5vw 5vw;
+    background-color: rgba(20,0,0,0.8);
+    border-radius: 20px;
+    border: #B50707 0.2em inset;
+    font-size: 1.5vw;
+    color: white;
+    margin: 0.5vw 0 0.5vw 0;
+}
+
+.text-forwarding {
+    font-size: 1vw;
+    margin: 1vw;
+}
+
+.forwarding:visited {
+    color: white;
+}
+
+.forwarding {
+    color:white;
+}
+
+.forwarding:hover {
+    color:darkred;
+}
+
+/* Userinterface */
+
+.fullscreen-section {
+    min-height: 100%;
+}
+
+.section-title {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.section-box {
+    width: 70%;
+    height: 90%;
+    margin: 5% 15% 5% 15%;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+}
+
+hr {
+    margin: 5% auto 5% auto;
+}
+
+/* Navbar */
+
+.header {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    box-shadow: 0px 1px 3px red;
+    z-index: 1;
+}
+
+.div-username {
+    width: 150px;
+    float: left;
+    margin: 10px 0 0 0;
+}
+.username {
+    width: 100%;
+}
+
+.nav {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+.nav-item {
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-item:hover {
+    padding-top: 3px;
+}
+
+.nav-logout {
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-button {
+    background-color: rgba(20,0,0,0.8);
+    border-radius: 20px;
+    border: #B50707 0.2em inset;
+    font-size: 17px;
+    color: white;
+    margin-top: -3px;
+}
+
+.fa-bars {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.nav-ul {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+        float: none;
+        width: 100%;
+    }
+    
+    .fa-bars {
+        font-size: 17px;
+        visibility: visible;
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        float: right;
+        margin: -35px 20px 0 0;
+    }
+    
+    .fa-bars:hover {
+        opacity: 0.5;
+    }
+    
+    .nav-ul {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-ul-open {
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    .nav-item, .nav-logout {
+        width: 100%;
+        padding: 5px 20px;
+        margin: 0;
+        background-color: black;
+    }
+    
+    .nav-item:hover {
+        background-color: dimgrey;
+        padding: 5px 20px;
+    }
+}
+
+/* Notizen */
+
+.notepad {
+    resize: none;
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    border: #B50707 0.1em inset;
+    color: black;
+    padding: 1vw;
+    width: 90%;
+    height: 50vh;
+}
+
+
+/* Animations */
+
+.animation-push:hover {
+    -o-transform:scale(0.95);
+    -moz-transform:scale(0.95);
+    -webkit-transform:scale(0.95);
+    transform:scale(0.95);
+}
